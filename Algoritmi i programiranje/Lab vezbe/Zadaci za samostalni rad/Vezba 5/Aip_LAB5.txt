@@ -1,0 +1,169 @@
+Sta ce biti ispisano na monitoru nakon izvrsenja sledeceg programa'
+#include<stdio.h>
+int increment(int a)
+{
+  int b=a+5;
+   return ++a;
+}
+void main()
+{
+  int x=5;
+  printf("%d" , increment(x));
+}
+-  6
+U programu
+1  int sabiranje(int a, int b)
+2  {
+3    int z=a+b;
+4    return z;
+5  }
+6  void main()
+7  {
+8     int c=3+2;
+9  }
+linija kodda sa rednim brojem 3 izvrsice se
+-nijednom
+
+Tip funkcije odredjuje 
+-tip povratne vrednosti(tj. rezultata koji funkcija vraca)
+
+Koliko najvise vrednosti(brojeva) kao rezultat moze da vrati funkcija data svojom deklaracijom:
+  void fun(float a,int b, int c)
+-nijedan od ponudjenih odgovora
+
+Sta ce biti ispisano na monitoru nakon izvrsenja sledeceg programa:
+#include<stdio.h>
+int increment(int a)
+{
+    return a++;
+}
+void main()
+{
+    int x=5;
+    printf("%d" , increment(x));
+}
+-  5
+
+U programu 
+1  int sabiranje (int a, int b)
+2  {
+3     int z=a*b;
+4     return z;
+5  }
+6  void main()
+7  {
+8    int c = sabiranje(2,3);
+9  }
+promenljiva c dobija vrednost
+-  6
+
+Tip funkcije treba da bude istog tipa kao i tip promenljive koju funkcija vraca naredbom return
+-true
+
+Sta ce se prikazati kao rezultat rada sledeceg programa?
+fun(int *pa)
+{
+*pa=-*pa
+}
+main()
+{
+int a=50;
+fun(&a);
+printf("%d" , a);
+}
+-  -50
+
+Da li je sledecaa funkcija za mo=nozenje dva broja ispravno definisana?
+void zbir(int a, int b)
+{
+   return a*b;
+}
+-ne
+
+U ponudjeno polje upisati vrednost koju ce promenljiva x imati nakon izvrsenja linije sa rednim brojem 7 u sledecem kodu
+1 int f(int a)
+2 {
+3    return a+2;
+4 }
+5 void main()
+6 {
+7    int x=f(f(f(4)));
+8 }
+
+-   10
+
+
+Sta ce biti prikazati na monitoru nakon izvrsenja sledeceg programa
+#include<stdio.h>
+void f(int *a, int *b)
+{
+	int pom;
+	pom=*a;
+	*a=*b;
+	*b=pom;
+}
+void main()
+{
+	int a=5,b=10;
+	f(&a,&b);
+	printf("%d %d" , a , b);
+}
+-   10 5
+
+Da bi funkcija vratila vise od jedne vrednosti potrebno je:
+-preko paramatera funkcije preneti adrese promenljivih
+
+Koji od sledecih poziva predstavlja korektan poziv funkcije?
+-funct();
+
+Sta ce biti prikazano na ekranu nakon izvrsenja sledeceg programa?
+void f(int a, int b)
+{
+int pom;
+pom=a;
+a=b;
+b=pom;
+}
+void main()
+{
+int b,a;
+a=3;
+b=7;
+f(a,b);
+printf("%d %d %d" , a , b , a-b);
+}
+
+- 3 7 -4
+
+U glavnom programu, funkcija se poziva?
+-koriscenjem imena funkcije iza koga se navode vrednosti agrumenata
+
+U programu 
+1 int s(int a, int b)
+2 {
+3	int z=a*b;
+4 	return z;
+5 }
+6 void main()
+7 {
+8 	int c=s(3,2)*s(1,1)*s(1,1)
+9 }
+Linija koda sa rednim brojem 3 izvrsice se 
+-tri puta
+
+U ponudjeno polje upisati vrednost koju ce promenljiva x imati nakon izvrsenja linije sa rednim brojem 11 u sledecem kodu?
+1 int f1(int a)
+2 {
+3 	return a+10;
+4 }
+5 int f2(int b)
+6 {
+7 	return b-5;
+8 }
+9 void main()
+10 {
+11 	int x=f1(f2(-5));
+12 }
+-  0
+
+ 

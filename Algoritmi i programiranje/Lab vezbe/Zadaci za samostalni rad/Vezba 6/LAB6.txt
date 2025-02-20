@@ -1,0 +1,193 @@
+Za otvaranje datoteke u programskom jeziku C koristi se funkcija
+- fopen
+
+Ako je vrednost za promenljivu a koja se unosi sa tastature string petko sta se prikazuje na ekranu nakon izvrsenja sledeceg programa?
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+  int x;
+  char a[100],b[100];
+  scanf("%s" , a);
+  strcpy(b,a);
+  strcat(a,"mika");
+  x=strcmp(a,"pera");
+  if(x>0)
+    strcpy(a,b);
+  printf("%s" , a);
+}
+- petko
+
+Ukoliko pre izvrsenja sledeceg koda fajl ime.txt postoji na disku u direktorijumu u kome je izvrsni program(vise odgovara)
+#include"stdio.h"
+void main()
+{
+  int a[]={0,2,4,6,8,10},i=0;
+  FILE *f=fopen("ime.txt" , "w");
+  while(i<6)
+   fprintf("%d" , a+i++);
+  fclose(f);
+}
+-  postojeci fajl ce biti obrisan, elementi niza a ce biti upisani u fajl i bice jedini podaci u fajlu
+
+U ponudjeno polje upisite vrednost promenljive pom nakon izvrsenja sledeceg dela koda:
+#include"string.h"
+main()
+{
+  char x[]="test iz AiP-a";
+  int pom = strlen(x)+1;
+}
+-  14
+
+Ukoliko su dva stringa istih duzina a razlicitih sadrzaja, sta ce vratiti funkcija strcmp?
+- Vrednost razlicitu od 0
+
+Na osnovu nacina na koji je fajl u sledecem kodu otvoren
+#include"stdio.h"
+void main()
+{
+  int a[1024], i=0;
+  FILE *f=fopen("ime.txt" , "r");
+  while(!feof(f))
+    fscanf(f,"%d", a+i);
+  fclose(f)
+}
+- dozvoljeno je samo citanje iz fajla
+
+Da li u biblioteci string postoji funkcija za poredjenje stringova
+-da
+
+Sta ce sadrzati  promenljiva pom nakon izvrsenja sledeceg koda?
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+void main() {
+	char a[] = "aaaaa", b[] = "bb", c[20];
+	strcpy(c, a);
+	strcat(c, a);
+	strcat(c, b);
+	printf("%d", strlen(c));
+}
+-12
+
+Neka je s znakovni niz. Sta radi sledeci deo koda:
+int i=0;
+while(s[i]!='\0')i++;
+-  Odredjuje duzinu datog stringa
+
+Ukoliko fajl "ime.txt" inicijalno ne postoji, sta ce se desiti nakon izvrsenja sledeceg koda?
+  FILE *f=fopen("ime.txt" , "a");
+  fprintf(f,"%d",1);
+- U tekstualni fajl sa imenom "ime.txt" ce biti upisan broj 1, Bice kreiran tekstualni fajl sa imenom "ime.txt" a zatim i otvoren u modu za upis na kraj
+
+Ukoliko je vrednost promenljive f nakon izvrsenja sledece linije koda jednaka 0(null), to znaci da 
+FILE *f= fopen("ime.txt" , "r");
+-  fajl ime.txt ne postoji na disku, ili se nalazi na istom direktorijumu gde je izvrsni program
+
+Funkcija koja ispituje da li se doslo do kraja datoteke je 
+- feof
+
+Koliko argumenata ima funkcija fprintf?
+-dva ili vise
+
+Ako je niz x niz karaktera, koja vrednost se stampa nakon izvrsenja sledeceg dela koda?
+char x[]="Pera Peric"
+printtf("%c",x[5]);
+- P
+
+Koje od navedenih su funkcije za rad sa stringovima
+- strcat i strcmp
+
+Za zatvaranje datoteke u programskom jeziku C koristi se funkcija:
+- fclose
+
+fajl: Ana voli Milovana
+Koja ce biti vrednost promenljive i nakon izvrsenja sledeceg koda?
+#include<stdio.h>
+void main()
+{
+int i=0;
+char s[30];
+FILE *f=fopen("recenica.txt" , "r");
+while(!feof(f))
+{
+  fscanf(f,"%s",s);
+  i++;
+}
+}
+-  3
+
+Sta ce biti prikazano na ekranu nakon izvrsenja sledeceg koda?
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+  int i;
+  char a[20];
+  strcpy(a, "aa");
+  strcat(a, "bb");
+  strcat(a. "ccc");
+  for(i=0;i<strlen(a);i++)
+  if(i%2==0)
+    a[i]='z';
+  printf("%s", a);
+}
+- zazbzcz
+
+Cemu sluzi funkcija strcat u biblioteci string?
+- za nadovezivanje stringova
+
+Prilikom otvaranja fajla, kod definisanja nacina pristupa fajla mod "r+" oznacava?
+-citanje i upis u fajl
+
+Ukoliko je pocetni sadrzaj fajla ime.txt
+1 2 12 15
+
+Koji ce sadrzaj biti nakon izvrsenja sledeceg koda?
+
+#include<stdio.h>
+void main()
+{
+  int a[]={0,2,4,6,8,10}, i=0,k=0,b[4];
+  FILE *f=fopen("ime.txt" , "w");
+  while(i<6)
+    fprintf(f,"%d" , a[i++]);
+  fclose(f);
+}
+- 0 2 4 6 8 10
+
+Ako se fajl ne zatvori:
+- program se prevodi ali u nekim slucajevima moze doci do gubitka podataka 
+
+Za predstavljanje stringova u programskom jeziku C koristi se:
+- niz podataka tipa char
+
+Koja je minimalna duzina niza karaktera u koji je moguce upisati string "AIP"
+- 4
+
+Sledeca linija koda
+char nn[]="test iz AiP-a"
+-deklarise i inicijalizuje vrednost stringa nn
+
+Koja ce biti vrednost promenljive k nakon izvrsenja sledeceg koda?
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+  int k=0;
+  char a[]="Aip" , b[]="aip";
+  if(!strcmp(a,b))
+    k++;
+  if(strlen(a)==strlen(b))
+    k++;
+  if(a[0]==b[0])
+    k++;
+  if(a[2]==b[2])
+    k++;
+}
+
+- 2
+
+
+
+

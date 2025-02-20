@@ -1,0 +1,254 @@
+AIP lab2 pitanja : 
+
+-Koja od linija će omogućiti da se odštampa vrednost 3.14 promenljive x? 
+	printf(“%f” , x); 
+
+ 
+
+-Koje su dve funkcije iz standardne biblioteke stdio.h? 
+	        scanf i printf 
+
+ 
+
+-Koja će vrednost imati promenljive a,b i s nakon sledećeg niza naredbi? 
+#include<stdio.h> 
+void main() 
+{ 
+int a,b,s; 
+a=1,b=1; 
+while(a+b<8) 
+{ 
+a=a+1; 
+b=b+2; 
+} 
+s=a+b; 
+printf(“%d%d%d” , a , b ,s ); 
+} 
+ 
+a=3 b=5 s=8 
+
+ 
+
+-Sta će biti prikazano na izlazu kao rezultat izvršavanja sledećeg isečka koda? 
+Int A=65; 
+char B=66; 
+printf(“A=%c B=%d” , A , B); 
+ 
+A=A B=66 
+ 
+-U polje ispod upišite vrednost promenljive Z nakon izvršenja sledećeg koda: 
+int X=1,Y=2,Z; 
+Z=X+ ++Y; 
+(upisati samo numericku vrednost) 
+ 
+
+4 
+
+ 
+
+-U polje ispod upišite vrednost promenljive Z nakon izvršenja sledećeg koda  
+int X=1, Y=2, Z; 
+Z=X+ Y++; 
+(upisati samo numericku vrednost) 
+ 
+3 
+ 
+ 
+-Koliko će se puta ponoviti petlja ako je naredva for sledećeg oblika: 
+for(i=-3;i<3;I++) 
+(upisati samo broj ponavljanja, numerički) 
+
+6 
+
+-Šta će biti vrednosti promenljivih a i b nakon izvršenja sledećeg dela programa? 
+a=1, b=2; 
+while(a<=3) 
+{ 
+a=a+1; 
+b=b*2; 
+} 
+ 
+a=4 b=16 
+
+ 
+
+-Koliko puta se najmanje izvršava while petlja? 
+ 
+0 
+ 
+-Čemu služi operator ++? 
+ 
+Označava uvećanje promenljive za 1 
+
+ 
+
+-Koja naredba u jeziku C se koristi za unos podataka standardnog ulaza? 
+Scanf 
+ 
+-Promenljive se u programskom jeziku C definišu 
+ 
+na početku bloka u kojem se promeljiva koristi u slučaju ANSI C-a ili bilo ge u programu ukoliko se koristi C++ kompajler 
+ 
+-Šta znači %c u sledećoj naredbi printf(“%c” , x) 
+označava konverzioni karakter za prikaz karaktera 
+ 
+ 
+-Koliko puta će se izvršiti sledeća petlja  
+
+Char a=4; 
+do 
+{ 
+a--; 
+} 
+while(a>4); 
+
+ 
+
+jednom 
+ 
+-Koja od navedenih deklaracija promenljivih nije ispravna? 
+Int 0=2, b=6; 
+
+ 
+
+-Za predstavljanje celih brojeva čiji binarni zapis ne prelazi dužinu od jednog bajta u programiranju 
+char 
+ 
+-Šta će se ispisati na ekranu sledeći program: 
+#include “stdio.h” 
+main() 
+{ 
+char d=’a’ , c=1; 
+printf(“%c %d” , d ,c); 
+ 
+a 1 
+ 
+-Šta označava i<10 u naredbi for(i=2;i<10;i++) 
+uslov za opstanak u petlji 
+
+ 
+
+-Koju će vrednost imati promenljiva x nakon izvršenja sledećeg niza naredbi? 
+x=2,y=1; 
+if(x+y<x-y) 
+x=-5; 
+else 
+x=5; 
+
+5 
+ 
+-Nakon izvršenja dela programa koji sledi, u promenljivoj s se nalazi 
+int a=1510,s,p; 
+p=a, s=0; 
+while(p>0) 
+{ 
+s=s+p%10 
+p=p/10 
+} 
+ 
+zbir cifara broja a 
+
+ 
+
+-Kako glasi direktiva koja je neophodna za korišćenje ulaza scanf i  izlaza printf 
+#include “stdio.h” 
+ 
+-Šta će biti prikazano na ekranu nakon izvršenja sledećeg koda  
+int k=5; 
+k*=2 
+printf(“%d”, k); 
+ 
+10 
+ 
+-Za predstavljanje realnih brojeva u dvostrukoj tačnosti u programskom jeziku C koristi se tip 
+ 
+double 
+ 
+-Šta će biti prikazano na ekranu nakon izvršenja sledećeg koda: 
+int a =5; 
+switch(a) 
+{ 
+case 4 
+printf(“4”); 
+break; 
+case 5 
+printf(“5”); 
+case 6  
+printf(“6”); 
+break; 
+default 
+printf(“7”); 
+} 
+ 
+56 
+ 
+-Koji tip petlje se izvršava najmanje jednom bez obzira na uslov zapisan u zaglavlju 
+DO-WHILE 
+
+ 
+
+- 
+
+for(i=0;i<n;i++) 
+{ 
+if(i%2==0) 
+a=a-i; 
+else 
+a=a+i; 
+} 
+printf(“%d”,a); 
+ 
+Kada bi se izostavile viticaste zagrade u prethodnom primeru, telo petlje bi  
+ 
+ 
+imalo nepromenljiv sastav 
+ 
+ 
+-Šta označava i++ u naredbi for(i=2;i<10;i++) 
+promena vrednosti brojaca 
+ 
+ 
+-Šta će biti prikazano na ekranu nakon izvršenja sledećeg dela koda: 
+int k=5; 
+float a=k/2; 
+printf(“%f”,a); 
+ 
+2.000000 
+ 
+-Za koju vrednost a sledece dve naredbe nisu ekvivalentne? 
+If(a>0) 
+b=2; 
+else 
+b=5; 
+////////////////////// 
+if(a<0) 
+b=5; 
+else 
+b=2; 
+ 
+0 
+ 
+-Da li if naredba mora da ima else granu? 
+Ne 
+ 
+-Koliki je minimalan broj ponavljanja tela petlje do-while 
+1 
+ 
+-Šta će biti prikazano na ekranu nakon izvršenja sledećeg dela koda? 
+Char s=’a’; 
+int i; 
+for(i=1;i<=5;i++) s++; 
+printf(“%c” , s); 
+ 
+f  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+ 
+
+ 

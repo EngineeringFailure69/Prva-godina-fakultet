@@ -1,0 +1,148 @@
+Koji su indeksi elemenata matrice u poslednjoj vrsti i pretposlednjoj koloni?
+double A[3][3] = {
+                        (1,0,0)
+			(0,1,0)
+			(0,0,1)
+		 };
+-  2 i 1
+
+Sta od ponudjenog vazi za sledeci kod?
+int A[5][5];
+for(int W=0,W<5,W++)
+  for(int P=0;P<5;P++)
+    scanf("%d" , &A[W][P]);
+-  Pomocu ovog koda se mogu elementi matrice A, od elementa A[0][0] do elementa A[4][4]
+
+Koju ce vrednost imati promenljiva s nakon izvrsenja sledeceg dela koda:
+s=0
+for(i=0;i<m;i++)
+  for(j=0;j<n;j++)
+    s+=a[i][j];
+-  jednaku sumi elemenata matrice
+
+Napisite naredbu na jeziku C koja ce upisati vrednost -15 u element u pretposlednjoj vrsti i pretposlednjoj koloni celobronje matrice A koja ima osam kolona i pet vrsta
+-  A[3][6]=-15;
+
+Neka je matrica a deklarisana naredbom
+int a[50][20]
+Element u gornjem desnom uglu je
+-  a[0][19]
+
+Vrednosti koje se ucitavaju sa tastature sledecim nizom naredbi
+for(i=0;i<n;i++)
+    for(j=0;j<n;j++)
+         scanf("%d" , &a[i][j]);
+redom ce se dodeljivati
+-  elementima vrsta
+
+Kako ce biti prikazana celobrojna matrica pomocu sledeceg dela koda:
+for(i=0;i<n;i++)
+{
+  for(j=0;j<n;j++)
+     printf("%3d" , a[i][j]);
+  printf("\n");
+}
+-  svaka vrsta ce biti prikazana u posebnom redu, a elementi unutar vrste ce postavljeni jedan ispod drugog,desno poravnati, u poljima velicine 3 karaktera
+
+Prilikom deklaracije matrice podataka, svi elementi matrice
+-  moraju biti istog tipa
+
+Koji su indeksi elemenata matrice u poslednjoj vrsti i poslednjoj koloni?
+double A[3][3] = {
+			(1,0,0)
+			(0,1,0)
+			(0,0,1)
+		 };
+-  2 i 2
+
+Da li se matrica moze inicijalizovati prilikom deklaracije?
+-  da
+
+
+Kod
+int A[5][5];
+for(int i=0;i<5;i++)
+ for(int j=0;j<5;j++)
+  scanf("%d" ,A[i][j]);
+-   Sadrzi greske, i ne moze se koristiti za unos elemenata matrice
+
+Sta radi sledeci deo koda?
+	for(i=0;i<n;i++)
+	     for(j=0;j<n;j++)
+		 if(i>j)
+		       A[i][j]=0;
+-  elementi ispod glavne dijagonale se postavljaju na 0
+
+for(i=0;i<n;i++)
+	X[i]=A[j][i];
+-   prepisivanje vrste matrice u niz
+
+Sledeci deo koda ispravno definise matricu
+	int m=5;
+	int n=10;
+	float a[m][n];
+-  False
+
+Koliko kolona i koliko vrsta ima matrica deklarisana sa 
+int A[9][7];
+-  7 kolona i 9 vrsta
+
+Sta radi sledeci deo koda
+s=0;
+for(i=0;i<m;i++)
+  for(j=0;j<n;j++)
+      if(a[i][j]!=0)
+          s++;
+-  Odredjuje broj nenultih elemenata u matrici
+
+Ako je matrica inicijalizovana sa int A[3][2]={1,3,5,7,2,4} kolika je vrednost elementa matrice A[2][1]?
+-  4
+
+Koliko for petlji se obicno koristi za unos elemenata jedne vrste matrice?
+-  1 for petlja
+
+Ako je matrica inicijalizovana sa a[2][3]={-1,3,-5,9,6,7}, sta ce biti prikazano nakon izvrsenja sledeceg niza naredbi
+for(i=0;i<2;i++)
+  for(j=0;j<3;j++)
+    printf("%d" , a[i][j]);
+- -13-5967
+
+Da bi u programskom jeziku C pristupili elementima na sporednoj dijagonali kvadratne matrice A dimenzije n, treba pristupiti samo onim elementima A[i][j] za koje je zadovoljen uslov
+(upisati samo uslov)
+-  i+j=n-1
+
+Ukoliko svaki podatak tipa int zauzima 4 bajta, koliko bajtova u memoriji zauzima matrica deklarisana na sledeci nacin
+int AB[2][2]
+-  16
+
+Kako se najcesce stampaju elementi matrice?
+-  koriscenjem dve ugnjezdene for petlje
+
+Sledeca inicijalizacija matrice:
+  char matr[2][3]={
+		{3,'A'},
+		{'a',3},
+		{6,'#"}
+		}
+-  ispravna je
+
+Sta radi sledeci deo koda?
+	for(i=0;i<n;i++)
+	     X[j]=A[j][i];
+- nista od ponudjenog
+
+Sta deklarise naredba a[10][5]?
+- celobrojnu matricu sa 10 vrsta i 5 kolona
+
+Koju funkciju ima sledeci kod?
+int s[2][2],x[2][2]={1,2,3,4};
+for(int i=0;i<2;i++)
+s[i][0]=x[i][i];
+- elemente glavne dijagonale matrice X kopira u kolonu 0 matrice 5
+
+Matrica moze biti definisana na sledeci nacin:
+int a[2][3]={1001,27,88,41,0,-1};
+-  True
+
+Element a[i][j] se nalazi iznad glavne dijagonale u kvadratnoj matrici reda NxN ukoliko je
+-  i<j
