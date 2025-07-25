@@ -1,8 +1,9 @@
 #include "stdio.h"
 
-int main(){
+int main()
+{
     int nizA[100];
-    int n,i,j;
+    int n, i, j;
     scanf("%d", &n);
 
     for (int i = 0; i < n; i++)
@@ -12,7 +13,8 @@ int main(){
 
     for (i = 0; i < n; i++)
     {
-        if (nizA[i] % 3 == 2) {
+        if (nizA[i] % 3 == 2)
+        {
             for (j = n; j >= i + 1; j--)
             {
                 nizA[j] = nizA[j - 1];

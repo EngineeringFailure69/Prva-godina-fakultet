@@ -1,19 +1,19 @@
-//Zamena elemenata koji nisu na glavnoj dijagonali dveju matrica
+// Zamena elemenata koji nisu na glavnoj dijagonali dveju matrica
 #include "stdio.h"
 int main()
 {
     int a[100][100];
     int b[100][100];
     int n, i, j;
-	printf("Unesite dimenziju matrice(nxn): ");
+    printf("Unesite dimenziju matrice(nxn): ");
     scanf("%d", &n);
-	printf("Unesite elemente prve matrice:\n");
+    printf("Unesite elemente prve matrice:\n");
     for (i = 0; i < n; i++)
         for (j = 0; j < n; j++)
         {
             scanf("%d", &a[i][j]);
         }
-		printf("Unesite elemente druge matrice:\n");
+    printf("Unesite elemente druge matrice:\n");
     for (i = 0; i < n; i++)
         for (j = 0; j < n; j++)
         {
@@ -23,13 +23,14 @@ int main()
     for (i = 0; i < n; i++)
         for (j = 0; j < n; j++)
         {
-            if (j > i) {
+            if (j > i)
+            {
                 int temp = a[i][j];
                 a[i][j] = b[i][j];
                 b[i][j] = temp;
             }
         }
-		printf("Matrice posle izmene:\n");
+    printf("Matrice posle izmene:\n");
     for (i = 0; i < n; i++)
     {
         for (j = 0; j < n; j++)
@@ -50,8 +51,5 @@ int main()
         printf("\n");
     }
 
- 
-
-       return 0;
-
+    return 0;
 }

@@ -3,8 +3,7 @@
 int main()
 
 {
-
-        int s = 0, i, j;
+	int s = 0, i, j;
 	int jedinica = -1;
 	int n;
 	scanf("%d", &n);
@@ -29,8 +28,5 @@ int main()
 
 	printf("%d", s);
 
- 
-
        return 0;
-
 }
